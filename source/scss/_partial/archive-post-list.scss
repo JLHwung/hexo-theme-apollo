@@ -1,3 +1,4 @@
+@import "variables";
 .archive {
     max-width: 500px;
     margin: 5em auto;
@@ -11,7 +12,7 @@
     .post-title-link {
         display: block;
         margin-left: 125px;
-        color: #42b983;
+        color: $primary-color;
         word-break: break-all;
         &:hover {
             border-bottom: 0;
