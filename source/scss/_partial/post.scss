@@ -1,3 +1,5 @@
+@import "variables";
+
 .post {
     padding-top: 1em;
 }
@@ -5,12 +7,12 @@
 .post-block {
     .post-title {
         margin: 0.65em 0;
-        color: #2c3e50;
+        color: $black;
         font-size: 1.5em;
     }
 
     .post-info {
-        color: #7f8c8d;
+        color: $primary-gray;
         margin: 1.2em 0;
         span {
             margin-left: 0.5rem;
@@ -21,7 +23,7 @@
             border-radius: 5px;
             font-size: 12px;
             color: white;
-            background-color: #E36B6B;
+            background-color: $complementary-color;
         }
     }
 }
@@ -69,16 +71,16 @@
     }
     & > table,
     & > figure.highlight {
-        box-shadow: 0 1px 2px rgba(0,0,0,0.125);
+        box-shadow: 0 1px 2px rgba($black,0.125);
     }
     .tip {
         position: relative;
         margin: 2em 0;
         padding: 12px 24px 12px 30px;
-        border-left: 4px solid #f66;
+        border-left: 4px solid $warning-color;
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
-        background-color: #f8f8f8;
+        background-color: $white;
         br {
             display: none;
         }
@@ -91,12 +93,12 @@
         width: 20px;
         height: 20px;
         border-radius: 100%;
-        color: #fff;
+        color: $white;
         font-size: 14px;
         line-height: 20px;
         font-weight: bold;
         text-align: center;
-        background-color: #f66;
+        background-color: $warning-color;
         font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
     }
 }
@@ -107,7 +109,7 @@
     width: 100%;
     height: 100%;
     padding: 1em 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba($black, 0.5);
     z-index: 10;
     #mask-image {
         max-width: 95%;
@@ -117,7 +119,7 @@
 code,
 pre {
     font-size: 0.8em;
-    background-color: #f8f8f8;
+    background-color: $neutral-gray-lighter;
     font-family: 'Roboto Mono', Monaco, courier, monospace;
 }
 
@@ -126,7 +128,7 @@ pre {
     margin: 1em 0;
     border-radius: 2px;
     line-height: 1.1em;
-    background-color: #f8f8f8;
+    background-color: $neutral-gray-lighter;
     overflow-x: auto;
     table, tr, td {
         width: 100%;
@@ -152,7 +154,7 @@ pre {
     position: absolute;
     top: 0;
     right: 0;
-    color: #ccc;
+    color: $neutral-gray;
     text-align: right;
     font-size: 0.75em;
     padding: 5px 10px 0;
@@ -178,18 +180,17 @@ $signs: ("html", "js", "bash", "css", "scss","diff", "java", "xml", "python", "j
 }
 
 pre {
-    color: #525252;
+    color: $black;
     .function .keyword,
-    .constant {
-       color: #0092db;
-    }
     .keyword,
-    .attribute {
+    .attribute,
+    .constant {
+        font-weight: bold;
         color: $complementary-color;
     }
     .number,
     .literal {
-        color: #ae81ff;
+        color: $analogous-color;
     }
     .tag,
     .tag .title,
@@ -200,7 +201,7 @@ pre {
     .clojure .built_in,
     .nginx .title,
     .tex .special {
-        color: #2973b7;
+        color: $analogous-color;
     }
     .symbol,
     .symbol .string,
@@ -209,7 +210,7 @@ pre {
         color: $primary-color;
     }
     .title {
-        color: #83B917;
+        color: $neutral-gray;
     }
     .tag .value,
     .string,
@@ -246,10 +247,10 @@ pre {
     .shebang,
     .apache .sqbracket,
     .tex .formula {
-        color: #b3b3b3;
+        color: $neutral-gray;
     }
     .deletion {
-        color: #BA4545;
+        color: $syntax-highlight-deletion-color;
     }
     .coffeescript .javascript,
     .javascript .xml,

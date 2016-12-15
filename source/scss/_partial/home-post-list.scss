@@ -3,9 +3,9 @@
     margin: 2em 0;
     .post-list-item {
         padding: 1em 0 2em;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid $neutral-gray-light;
         &:last-child {
-            border-bottom: 0px;
+            border-bottom: 0;
         }
     }
     .post-content{

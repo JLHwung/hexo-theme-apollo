@@ -2,15 +2,15 @@ footer {
     padding-bottom: 1px;
     .copyright {
         margin: 4em 0;
-        border-top: 1px solid #ddd;
+        border-top: 1px solid $neutral-gray-light;
         text-align: center;
         p, a {
-            color: #aaa;
+            color: mix($neutral-gray, $neutral-gray-light);
             font-size: 14px;
             font-weight: 100;
         }
         a:hover {
-            color: #888;
+            color: $neutral-gray;
         }
     }
 }

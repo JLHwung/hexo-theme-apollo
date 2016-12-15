@@ -1,6 +1,6 @@
 @import "variables";
 ::selection {
-    color: #FFFFFF;
+    color: $white;
     background-color: $primary-color;
 }
 
@@ -11,10 +11,10 @@ html, body {
 
 body {
     margin: 0;
-    color: #34495e;
+    color: $black;
     font-size: 15px;
     line-height: 1.6;
-    background-color: #fff;
+    background-color: $white;
     font-family: system-ui, BlinkMacSystemFont, -apple-system, 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -30,10 +30,9 @@ ul {
 }
 
 a, a:active {
-    color: #2c3e50;
+    color: $black;
     text-decoration: none;
 }
-
 a.nav-list-link.active,
 a.nav-list-link:hover,
 a.post-title-link:hover {
@@ -62,7 +61,7 @@ table {
     width: 100%;
     margin: 1em auto;
     thead {
-        background-color: #ddd;
+        background-color: $neutral-gray-light;
         th {
             padding: 5px;
             min-width: 20px;
@@ -70,7 +69,7 @@ table {
     }
     tbody {
         tr:nth-child(2n) {
-            background-color: #eee;
+            background-color: $neutral-gray-lighter;
         }
         td {
             padding: 5px;
