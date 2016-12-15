@@ -12,7 +12,7 @@
         color: $white;
         background-color: $complementary-color;
         &:hover {
-            background-color: lighten($complementary-color, 10);
+            background-color: darken($complementary-color, 6);
         }
     }
 }
