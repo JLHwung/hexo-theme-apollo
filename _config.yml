@@ -19,3 +19,7 @@ ga: UA-65933410-1
 
 # Copyright Infomation
 startyear: 2015
+
+# Node sass Config
+# see https://github.com/sass/node-sass
+node_sass:
