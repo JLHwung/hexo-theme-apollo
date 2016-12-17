@@ -1,7 +1,9 @@
 //Pick a color
 
-// THIS IS SET IN THE THEME FILE AT THE TOP LEVEL
-$first-color: hsl(20, 100%, 50%);
+$theme-hue: 20;
+
+// Generate the first color according to theme-hue
+$first-color: hsl($theme-hue, 100%, 50%);
 
 // Find the complement
 
