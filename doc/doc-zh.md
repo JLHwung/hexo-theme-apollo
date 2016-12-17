@@ -19,6 +19,18 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non numquam sae
 
 如果没有配置该信息，Hexo-theme-apollo 会使用 `page.title` 和 `page.author` 来配置该标签。
 
+## 主题色
+本主题可以自由更换主题色, 在`source/scss/_partial/_variable.scss`中编辑
+```scss
+$theme-hue: 20;
+```
+为任意0到359之间的整数即可. 主题的其他颜色将根据[色彩理论](http://tallys.github.io/color-theory/)自动生成. 这个整数与色彩的关系可以参考[这里](https://en.wikipedia.org/wiki/Hue#/media/File:HueScale.svg).
+
+重新生成博客即可生效.
+```bash
+hexo clean && hexo g
+```
+
 ## 标题
 
 实际上，Hexo-theme-apollo 只支持两种标题：`h1~h3` 大标题，`h4~h6` 小标题，也就是说，`#` 和 `###` 的样式是一样的。之所以这么处理，是因为就个人感觉而言，我们不应该为文章设置过多的层级消耗读者的阅读精力。这相当于强制使用 Hexo-theme-apollo 的用户在写文章时注意文章结构，最多只能使用两层结构。

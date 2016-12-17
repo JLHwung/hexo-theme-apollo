@@ -1,15 +1,5 @@
 ![hexo-theme-apollo](https://cloud.githubusercontent.com/assets/9530963/13026956/08e76eca-d277-11e5-8bfc-2e80cea20a0d.png)
 
-## Install
-
-``` bash
-hexo init Blog 
-cd Blog 
-npm install
-npm install --save hexo-renderer-{jade,sass} hexo-generator-{archive,feed, hexo-browsersync
-git clone https://github.com/JLHwung/hexo-theme-apollo.git themes/apollo
-```
-
 ## Enable
 
 Go to `_config.yml` and change the `theme` property to `apollo` value:
@@ -53,6 +43,18 @@ result:
 
 If there is no `desc` property or value, hexo-theme-apollo will use `page.title` and `page.author` instead of it. 
 
+## Theme color
+
+Edit `source/scss/_partial/_variable.scss`
+```scss
+$theme-hue: 20;
+```
+to any integer ranging from 0 to 359. The color palette is auto generated from [color theory](http://tallys.github.io/color-theory/). A visual relationship between hue and the color is available [here](https://en.wikipedia.org/wiki/Hue#/media/File:HueScale.svg).
+
+Regenerate the blog to take effect
+```bash
+hexo clean && hexo g
+```
 ## H1~H6 Title
 
 In fact, Hexo-theme-apollo only supoort two kinds of titles: h1~h3 belongs to what i called `big title`, and h4~h6 belongs to `small title`, this means that `#` and `###` have the same styles。

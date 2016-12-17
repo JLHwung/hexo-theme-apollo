@@ -1,20 +1,26 @@
 ![hexo-theme-apollo](https://cloud.githubusercontent.com/assets/9530963/13026956/08e76eca-d277-11e5-8bfc-2e80cea20a0d.png)
 
+A fork of original [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apollo) with opinionated changes:
+- formularised color system
+- high-standard a11y support
+- better developer experience
+
+
 ## 文档
 
-- [中文文档](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-zh.md)
-- [Document](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-en.md)
+- [中文文档](https://github.com/JLHwung/hexo-theme-apollo/blob/master/doc%2Fdoc-zh.md)
+- [Document](https://github.com/JLHwung/hexo-theme-apollo/blob/master/doc%2Fdoc-en.md)
 
 ## 安装
 
-[![asciicast](https://asciinema.org/a/emrvroa9054hz6k8ise0uxh2u.png)](https://asciinema.org/a/emrvroa9054hz6k8ise0uxh2u)
+[![asciicast](https://asciinema.org/a/bsvksjw0h0gro2l34z8pxpihk.png)](https://asciinema.org/a/bsvksjw0h0gro2l34z8pxpihk)
 
 ``` bash
-hexo init Blog 
+hexo init Blog --no-install
 cd Blog 
-npm install
-npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
-git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo
+yarn
+yarn add hexo-renderer-{jade,sass} hexo-generator-{archive,feed,sitemap} hexo-browsersync
+git clone https://github.com/JLHwung/hexo-theme-apollo.git themes/apollo
 ```
 
 ## 启用
