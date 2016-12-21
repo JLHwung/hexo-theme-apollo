@@ -19,7 +19,7 @@ A fork of original [hexo-theme-apollo](https://github.com/pinggod/hexo-theme-apo
 hexo init Blog --no-install
 cd Blog 
 yarn
-yarn add hexo-renderer-{jade,sass} hexo-generator-{archive,feed,sitemap} hexo-browsersync
+yarn add hexo-renderer-sass hexo-render-pug hexo-generator-{archive,feed,sitemap} hexo-browsersync
 git clone https://github.com/JLHwung/hexo-theme-apollo.git themes/apollo
 ```
 
