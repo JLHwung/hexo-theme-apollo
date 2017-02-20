@@ -1,7 +1,7 @@
 menu:
     Blog: /
     Archive: /archives/
-    About: /about
+    About: /about/
     Rss: /atom.xml
 
 favicon: /favicon.png
