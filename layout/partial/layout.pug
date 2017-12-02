@@ -9,7 +9,10 @@ html(lang=config.language)
         .wrap
             header
                 a.logo-link(href=url_for())
-                    img(src=url_for(theme.logo) alt="logo")
+                    picture
+                        source(srcset=url_for(theme.logo3x) alt="logo" media="(-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx)")
+                        source(srcset=url_for(theme.logo2x) alt="logo" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)")
+                        img(src=url_for(theme.logo) alt="logo")
                 include nav
             main.container#main
                 block container

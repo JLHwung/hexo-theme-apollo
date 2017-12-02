@@ -5,7 +5,9 @@ menu:
     Rss: /atom.xml
 
 favicon: /favicon.png
-logo: /favicon.png
+logo: /img/logo.png
+logo2x: /img/logo@2x.png
+logo3x: /img/logo@3x.png
 
 # Comment
 # e.g disqus: seansun
