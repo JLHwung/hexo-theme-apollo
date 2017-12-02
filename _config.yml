@@ -8,6 +8,7 @@ favicon: /favicon.png
 logo: /img/logo.png
 logo2x: /img/logo@2x.png
 logo3x: /img/logo@3x.png
+themeColor: "#d66329"
 
 # Comment
 # e.g disqus: seansun
