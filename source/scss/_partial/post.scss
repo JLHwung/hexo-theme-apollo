@@ -8,12 +8,12 @@
     .post-title {
         margin: 0.65em 0;
         color: $black;
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     .post-info {
         color: $neutral-gray;
-        margin: 1.2em 0;
+        margin: 1.2rem 0;
         span {
             margin-left: 0.5rem;
         }
@@ -31,14 +31,14 @@
 .post-content {
     h2, h3, h4, h5, h6 {
         position: relative;
-        margin: 1em 0;
+        margin: 1rem 0;
         a:before {
             content: "#";
             color: $primary-color;
             position: absolute;
-            left: -0.7em;
-            top: -4px;
-            font-size: 1.2em;
+            left: -1.6rem;
+            top: -6px;
+            font-size: 1.8rem;
             font-weight: bold;
         }
     }
@@ -49,25 +49,32 @@
     }
 
     h2, h3 {
-        font-size: 22px;
+        font-size: 1.4rem;
     }
 
     h4, h5, h6 {
-        font-size: 18px;
+        font-size: 1.1rem;
+    }
+    p {
+        text-align: start;
+        text-indent: 2rem;
+    }
+    li p:first-child {
+        text-indent: 0;
     }
     a {
         color: $primary-color;
         word-break: break-all;
     }
     blockquote {
-        margin: 2em 0;
+        margin: 2rem 0;
         padding-left: 20px;
         border-left: 4px solid $primary-color;
     }
     img {
         display: block;
         max-width: 100%;
-        margin: 1em auto;
+        margin: 1rem auto;
     }
     & > table,
     & > figure.highlight {
@@ -75,7 +82,7 @@
     }
     .tip {
         position: relative;
-        margin: 2em 0;
+        margin: 2rem 0;
         padding: 12px 24px 12px 30px;
         border-left: 4px solid $warning-color;
         border-top-right-radius: 2px;
@@ -108,7 +115,7 @@
     overflow: scroll;
     width: 100%;
     height: 100%;
-    padding: 1em 0;
+    padding: 1rem 0;
     background-color: rgba($black, 0.5);
     z-index: 10;
     #mask-image {
@@ -118,7 +125,7 @@
 
 code,
 pre {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     background-color: $neutral-gray-lighter;
     font-family: 'Roboto Mono', Monaco, courier, monospace;
 }
@@ -156,7 +163,7 @@ pre {
     right: 0;
     color: $neutral-gray;
     text-align: right;
-    font-size: 0.75em;
+    font-size: 0.75rem;
     padding: 5px 10px 0;
     line-height: 15px;
     height: 15px;
@@ -172,12 +179,8 @@ pre {
     }
 }
 
-$signs: ("html", "js", "bash", "css", "scss","diff", "java", "xml", "python", "json", "swift", "ruby", "perl", "php", "c", "java", "cpp", "ts");
+$signs: ("html", "js", "bash", "css", "scss","diff", "java", "xml", "python", "json", "swift", "ruby", "perl", "php", "c", "java", "cpp", "ts", "go", "cpp");
 @include code-signs($signs);
-
-.highlight.cpp .code:after {
-    content: 'C++';
-}
 
 pre {
     color: $black;

@@ -12,10 +12,8 @@ html, body {
 body {
     margin: 0;
     color: $black;
-    font-size: 15px;
-    line-height: 1.6;
+    font: 16px/1.6 system-ui, -apple-system, sans-serif;
     background-color: $white;
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, 'Helvetica Neue', Arial, sans-serif;
 }
 
 ul.nav,
